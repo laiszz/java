@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author L
- *
- */
-module helloWorld {
-}
