@@ -33,6 +33,8 @@ public class Aula01 {
 		System.out.println("Divisão: " + df.format(numero1 / numero2));
 		System.out.println("Potência: " + df.format(Math.pow(numero1, numero2)));
 		System.out.println("Raíz Quadrada: " + df.format(Math.sqrt(numero1)));
+		
+		leia.close();
 	}
 
 }
