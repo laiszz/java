@@ -11,6 +11,7 @@ public class Exercicio4 {
 		float[] vetorMedias = new float[10];
 		float soma = 0, media = 0;
 		
+		// Entrada de dados
 		for (int i = 0; i < matrizNotasAlunos.length; i++) {
 			System.out.println("\nAluno " + (i + 1));
 			
@@ -20,7 +21,9 @@ public class Exercicio4 {
 			}
 		}
 		
-		for (int i = 0; i < matrizNotasAlunos.length; i++) {			
+		// Calculando as médias
+		for (int i = 0; i < matrizNotasAlunos.length; i++) {	
+			// Resetando as variáveis para um aluno não interferir no outro
 			soma = 0;
 			media = 0;
 			
@@ -30,6 +33,7 @@ public class Exercicio4 {
 			
 			media = soma / 4;
 			
+			// Adicionando a média no vetor de médias
 			vetorMedias[i] = media;
 		}
 		
