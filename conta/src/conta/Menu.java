@@ -2,6 +2,7 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -20,10 +21,12 @@ public class Menu {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		byte opcao;
-		int numero, agencia, tipo, aniversario, numeroDestino;
+		Conta conta_bancaria = new Conta(1, 123, 1, "Lais Sales", 100000.00f);
+		
+		int opcao, numero, agencia, tipo, aniversario, numeroDestino;
 		String titular;
 		float saldo, limite, valor;
+		
 		
 		while (true) {
 			System.out.println(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_PURPLE_BOLD_BRIGHT);
@@ -51,7 +54,7 @@ public class Menu {
 			
 			System.out.println(Cores.TEXT_RESET);
 			
-			opcao = entrada.nextByte();
+			opcao = entrada.nextInt();
 			
 			if (opcao == 9) {
 				sobre();
