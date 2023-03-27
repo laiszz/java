@@ -17,6 +17,9 @@ public class Conta {
 		this.saldo = saldo;
 	}
 	
+	// Método Construtor nulo (polimorfismo de sobrecarga)
+	public Conta() {}
+	
 	// Sets e Gets
 	public int getNumero() {
 		return numero;

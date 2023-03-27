@@ -2,7 +2,8 @@ package conta;
 
 import java.util.Scanner;
 
-import conta.model.Conta;
+import conta.model.ContaCorrente;
+import conta.model.ContaPoupanca;
 import conta.util.Cores;
 
 public class Menu {
@@ -21,12 +22,15 @@ public class Menu {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		Conta conta_bancaria = new Conta(1, 123, 1, "Lais Sales", 100000.00f);
 		
 		int opcao, numero, agencia, tipo, aniversario, numeroDestino;
 		String titular;
 		float saldo, limite, valor;
 		
+		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "Lais Sales", 1000.0f, 580.0f);
+		cc1.visualizar();
+		ContaPoupanca cp1 = new ContaPoupanca(2, 123, 2, "Marisa Sales", 1000.0f, 24);
+		cp1.visualizar();
 		
 		while (true) {
 			System.out.println(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_PURPLE_BOLD_BRIGHT);
