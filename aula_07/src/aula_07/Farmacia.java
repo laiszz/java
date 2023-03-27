@@ -1,6 +1,10 @@
 package aula_07;
 
+import java.text.NumberFormat;
+
 public class Farmacia {
+	NumberFormat nf = NumberFormat.getCurrencyInstance();
+	
 	private int codigo;
 	private String nome;
 	private float preco;
@@ -58,7 +62,7 @@ public class Farmacia {
 	public void visualizar() {
 		System.out.println("Código: " + this.getCodigo());
 		System.out.println("Nome: " + this.getNome());
-		System.out.println("Preço: " + this.getPreco());
+		System.out.println("Preço: " + nf.format(this.getPreco()));
 		System.out.println("Quantidade: " + this.getQuantidade());
 		System.out.println("Setor: " + this.getSetor());
 	}

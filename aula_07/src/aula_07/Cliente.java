@@ -1,17 +1,20 @@
 package aula_07;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Cliente {
 	// Atributos
 	private String nome;
-	private String cpf;
+	private LocalDate data_nascimento;
 	private String telefone;
 	private String email;
 	private String endereco;
 	
 	// Método Construtor
-	public Cliente(String nome, String cpf, String telefone, String email, String endereco) {
+	public Cliente(String nome, LocalDate data_nascimento, String telefone, String email, String endereco) {
 		this.nome = nome;
-		this.cpf = cpf;
+		this.data_nascimento = data_nascimento;
 		this.telefone = telefone;
 		this.email = email;
 		this.endereco = endereco;
@@ -26,12 +29,12 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getCpf() {
-		return cpf;
+	public LocalDate getdata_nascimento() {
+		return data_nascimento;
 	}
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setdata_nascimento(LocalDate data_nascimento) {
+		this.data_nascimento = data_nascimento;
 	}
 	
 	public String getTelefone() {
@@ -61,7 +64,7 @@ public class Cliente {
 	// Métodos que eu escrevi
 	public void visualizar() {
 		System.out.println("Nome: " + this.getNome());
-		System.out.println("CPF: " + this.getCpf());
+		System.out.println("Data de Nascimento: " + this.getdata_nascimento().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		System.out.println("Telefone: " + this.getTelefone());
 		System.out.println("E-mail: " + this.getEmail());
 		System.out.println("Endereço: " + this.getEndereco());

@@ -3,8 +3,8 @@ package aula_07;
 public class TesteCurso {
 
 	public static void main(String[] args) {
-		Curso curso1 = new Curso(1, "Física", 180, 176, 10);
-		Curso curso2 = new Curso(2, "Química", 210, 207, 10);
+		CursoLivre curso1 = new CursoLivre(1, "Física 0", 180, 176, 10, false);
+		CursoEspecializacao curso2 = new CursoEspecializacao(2, "Contabilidade", 210, 207, 10, 1);
 		
 		curso1.visualizar();
 		System.out.println("\n");

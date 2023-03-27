@@ -3,12 +3,12 @@ package aula_07;
 public class TesteFarmacia {
 
 	public static void main(String[] args) {
-		Farmacia farmacia1 = new Farmacia(1, "Hidratante", 49.90f, 15, "Beleza");
-		Farmacia farmacia2 = new Farmacia(2, "Base Líquida", 44.90f, 100, "Maquiagem");
+		FarmaciaMedicamento remedio = new FarmaciaMedicamento(1, "Tolrest", 99.90f, 15, "Medicamentos", true);
+		FarmaciaPerfumaria perfume = new FarmaciaPerfumaria(2, "Rosas", 44.90f, 10, "Perfumes", 2);
 		
-		farmacia1.visualizar();
+		remedio.visualizar();
 		System.out.println("\n");
-		farmacia2.visualizar();
+		perfume.visualizar();
 
 	}
 

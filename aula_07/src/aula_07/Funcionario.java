@@ -1,6 +1,10 @@
 package aula_07;
 
+import java.text.NumberFormat;
+
 public class Funcionario {
+	NumberFormat nf = NumberFormat.getCurrencyInstance();
+	
 	// Atributos
 	private int codigo;
 	private String nome;
@@ -64,7 +68,7 @@ public class Funcionario {
 		System.out.println("Nome: " + this.getNome());
 		System.out.println("NIS: " + this.getNis());
 		System.out.println("Cargo: " + this.getCargo());
-		System.out.println("Salário: " + this.getSalario());
+		System.out.println("Salário: " + nf.format(this.getSalario()));
 	}
 	
 }
