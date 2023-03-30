@@ -73,7 +73,7 @@ public abstract class Conta {
 		}
 	}
 	
-	public void deposito (float valor) {
+	public void depositar (float valor) {
 		this.setSaldo(this.getSaldo() + valor);
 	}
 	
